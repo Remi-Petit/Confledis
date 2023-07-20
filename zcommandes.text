@@ -1,0 +1,30 @@
+Pour convertir SASS en CSS :
+
+    sass --watch public/pages/scss:public/pages/css
+
+Pour récupérer la base de données et la mettre en entités :
+
+    php bin/console doctrine:mapping:import "App\Entity" annotation --path=src/Entity
+
+Pour créer les Repository en fonction des Entity :
+
+    1) Il faut mettre la Repository que ça va devenir (exemple : Nom_EntityRepository) dans le ficier Entity
+    Exemple : @ORM\Entity(repositoryClass="App\Repository\CompetencesRepository")
+
+    2) Exécuter la commande suivante :
+
+        php bin/console make:entity --regenerate App
+
+Pour créer le CRUD symfony :
+
+    php bin/console make:crud
+
+    le nom de l'entité
+
+    php bin/console make:crud Nom_Entité
+
+CRUD = (Create, Read, Update, Delete)
+
+Pour créer un Controller :
+
+    php bin/console make:controller Nom_Controller
