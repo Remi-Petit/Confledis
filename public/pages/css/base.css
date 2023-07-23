@@ -43,4 +43,37 @@
   color: #00C6A7;
 }
 
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+a, button {
+  background-color: rgba(0, 199, 169, 0.5);
+  padding: 5px;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin: 5px auto;
+  
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border: 3px solid purple;
+}
+
+tr, td {
+  border: 3px solid black;
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+}
+
 /*# sourceMappingURL=base.css.map */

@@ -21,6 +21,11 @@
         "dev-server": "encore dev-server",
         "dev": "encore dev",
         "watch": "encore dev --watch",
-        "build": "encore production --progress"
+        "build": "encore production --progress",
+        "sass": "sass --version",
+        "sass::watch": "npm run sass --watch public/pages/scss:public/pages/css"
+    },
+    "dependencies": {
+        "sass": "^1.64.1"
     }
 }

@@ -13,20 +13,8 @@
     </head>
 
     <body>
-        <div class="bar-presentation">
-            <input 
-                type="text"
-                name="searchBar"
-                id="searchBar"
-                placeholder="Barre de recherche"
-            >
-        </div>
-        <div {{ react_component('SearchBar', { 'fullName': 'YoanDev' }) }}></div>
-        <p>test</p>
         <main>
             {% block body %}{% endblock %}
         </main>
-
-        <div {{ react_component('See') }}></div>
     </body>
 </html>

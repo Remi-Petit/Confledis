@@ -15,25 +15,11 @@
                 <th>actions</th>
             </tr>
         </thead>
-        <tbody>
-        {% for produit in produits %}
-            <tr>
-                <td>{{ produit.id }}</td>
-                <td>{{ produit.nom }}</td>
-                <td>{{ produit.prix }}</td>
-                <td>{{ produit.quantite }}</td>
-                <td>
-                    <a href="{{ path('app_produit_show', {'id': produit.id}) }}">show</a>
-                    <a href="{{ path('app_produit_edit', {'id': produit.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
+        <tbody {{ react_component('See') }}></tbody>
     </table>
 
     <a href="{{ path('app_produit_new') }}">Create new</a>
+
+    
+
 {% endblock %}
