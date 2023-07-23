@@ -5,7 +5,8 @@ Test d'entrée en stage Confledis
 Base de donnée MySQL.
 C'est le fichier confledis.sql
 
-#Mise en marche
+# Mise en marche
+
 Installation du vendor : composer install
 
 Installation du node module : npm install
